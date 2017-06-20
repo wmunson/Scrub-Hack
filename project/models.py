@@ -3,7 +3,7 @@ from flask.ext.mongoalchemy import MongoAlchemy
 from datetime import datetime, date
 
 
-class Participant:
+class Participant(db.Document):
 	zip_code = db.StringField()
 	id = db.StringField()
 	state = db.StringField()
@@ -13,7 +13,7 @@ class Participant:
 	collection_id = db.StringField()
 	
 
-class Policy:
+class Policy(db.Document):
 	parcticipant_id = db.StringField()
 	product = db.StringField()
 	plan db.StringField()
@@ -22,7 +22,7 @@ class Policy:
 	collection_id = db.StringField()
 
 
-class Activity:
+class Activity(db.Document):
 	target_count = db.StringField()
 	activity_typpe = db.StringField()
 	initiative = db.StringField()
