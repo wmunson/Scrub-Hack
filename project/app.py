@@ -1,6 +1,6 @@
-from flask import Flask, requests, render_template
+from flask import Flask, request, render_template
 from config import DevConfig
-
+from flask.ext.mongoalchemy import MongoAlchemy
 
 
 
@@ -8,9 +8,8 @@ from config import DevConfig
 
 app = Flask(__name__)
 
-app.config.from_object("config.DevConfig")
-
-db = SQLAlchemy(app)
+app.config['MONGOALCHEMY_DATABASE'] = 'library'
+db = MongoAlchemy(app)
 
 
 

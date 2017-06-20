@@ -1,6 +1,6 @@
 class Config:
 	# PUT IN YOUR DATABSE BELOW
-	SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/YOURDATABASE.db'
+	MONGOALCHEMY_DATABASE_URI = 'mongodb://localhost/scrubs.db'
 	SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
