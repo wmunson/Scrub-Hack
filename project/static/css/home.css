@@ -1,3 +1,56 @@
-.graph{
-	height:40em;
+
+html {
+    text-align: center;
 }
+
+h1 {
+    font-family: Roboto;
+}
+
+table {
+    border: 1em;
+}
+
+.container {
+    width:75%;
+}
+
+.nav {
+    margin-top: 5%;
+}
+
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}*/
+
+.text-input {
+    margin-top: 5%;
+    font-family: Spectral;
+}
+
+.text-input {
+
+}
+
+.months {
+    position: relative;
+    display: inline-block;
+}
+
+.months select {
+    display: inline;
+}
+
+/*.dropdown-content {
+    position: absolute;
+    background-color:gray;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+

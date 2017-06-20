@@ -1,31 +1,67 @@
+
 <!DOCTYPE html>
 
 
 <html>
+
 	<header>
 		<title> ViTech Visual </title>
 		<!-- STUFF YOU NEED FOR MATERIALIZE BELOW -->
-		<!-- <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css"> -->
-		<!-- <link rel="stylesheet" href="../static/css/home.css"> -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.css" type="text/css"/>
+		<link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
+		<link rel="stylesheet" href = "../static/css/home.css">
 	</header>
 
 
 	<body>
-	<h1> Hello World </h1>
-	<div>
-		<input type="button" value="Search" class="search"/>
-	</div>
-	<div class="graph">
-		
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<div class="nav">
+			<img src= "scrubs.jpg" alt="Scrubs">
+				<h2 id="logo">NetApp / ViTech Visualization</h2>
+			</img>
+			<h3>By the Scrub Hacks</h3>
+			<blockquote class="flow-text"><i>Hacks so easy a caveman could do it</i></blockquote>
+		</div>
+
+		<div class="text-input">
+			<h4>Campaign Effectiveness by Month</h4>
+			<!-- <input type="text" name="marketing" value="marketing"> -->
+		</div>
+
+		<div class="months">
+			<select>
+				<option value="Jan">January</option>
+				<option value="Feb">February</option>
+				<option value="Mar">March</option>
+				<option value="Apr">April</option>
+				<option value="May">May</option>
+				<option value="Jun">June</option>
+				<option value="Jul">July</option>
+				<option value="Aug">August</option>
+				<option value="Sep">September</option>
+				<option value="Oct">October</option>
+			</select>
+		</div>
+
+
+		<input type="submit" value="Submit">
+
+
+		<div id= "map" class="container">
+		</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.js"></script>
 	<script src="../static/js/main.js"> </script>
+  
+		<script src="../static/js/main.js"> </script>
 	</body>
 
+
+
 </html>
+
+
