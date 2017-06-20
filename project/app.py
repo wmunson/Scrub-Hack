@@ -24,4 +24,4 @@ def show_homepage():
 
 if __name__ == "__main__":
 	# YOU CAN CHOOSE WHICH PORT IS BEST
-	app.run(debug=True, port=8000)
+	app.run(debug=True, port=8000, host='0.0.0.0')
