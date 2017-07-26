@@ -1,19 +1,19 @@
 console.log('start')
 
     // FIND FREESPOUSE PROMO BY MONTH
-const urlFree = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&wt=json" 
+var urlFree = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&wt=json" 
             + "&rows=51000" 
             + "&q=promo_codes:FREESPOUSE" 
             + "&q=policy_start_date:[2016-01-01T00:00:00Z TO 2016-01-31T00:00:00Z]";
 
     // FIND ACCOFF10 PROMO BY MONTH
-const urlOff = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&wt=json" 
+var urlOff = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&wt=json" 
             + "&rows=51000" 
             + "&q=promo_codes:ACCOFF10" 
             + "&q=policy_start_date:[2016-01-01T00:00:00Z TO 2016-01-31T00:00:00Z]";
 
     // FIND FINCON PROMO BY MONTH
-const urlFin = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&wt=json" 
+var urlFin = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&wt=json" 
             + "&rows=51000" 
             + "&q=promo_codes:FINCON" 
             + "&q=policy_start_date:[2016-01-01T00:00:00Z TO 2016-01-31T00:00:00Z]";
@@ -81,9 +81,9 @@ var xhr3 = new XMLHttpRequest();
 
 console.log(data)
 
-const button = $('.search');
+const searcButton = $('.search');
 
-button.on('click', function(e){
+searchButton.on('click', function(e){
     console.log('click');
     
     graph(data=0)
